@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Object-oriented JavaScript example</title>
+    <title>thisect-oriented JavaScript example</title>
   </head>
 
   <body>
@@ -11,6 +11,57 @@
   </body>
 
     <script>
+
+      const person = {
+        name: {
+        first: "Bob",
+        last: "Smith",
+        },
+        age: 32,
+        bio() {
+          console.log(`${this.name.first} ${this.name.last} is ${this.age} years old.`);
+        },
+        introduceSelf() {
+          console.log(`Hi! I'm ${this.name.first}.`);
+        },
+      };
+      const myDataName = "height";
+      const myDataValue = "1.75m";
+      person[myDataName] = myDataValue;
+
+      person.age = 45;
+      person['name']['last'] = 'Cratchit';
+      person["eyes"] = "hazel";
+      person.farewell = function () {
+        console.log("Bye everybody!");
+      };
+
+      function logProperty(propertyName) {
+        console.log(person[propertyName]);
+      };
+
+      const person1 = {
+        name: "Chris",
+        introduceSelf() {
+          console.log(`Hi! I'm ${this.name}.`);
+        },
+      };
+
+      const person2 = {
+        name: "Deepti",
+        introduceSelf() {
+          console.log(`Hi! I'm ${this.name}.`);
+        },
+      };
+
+      function Person(name) {
+        this.name = name;
+        this.introduceSelf = function () {
+          console.log(`Hi! I'm ${this.name}.`);
+        };
+      };
+
+
 
     </script>
 </html>
