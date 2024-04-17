@@ -10,8 +10,9 @@ body {
     background-color: #fff;
     color: #333;
     font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-    padding: 0;
+    padding: 1em;
     margin: 0;
+    width: 400px;
 }
 
 h1 {
@@ -36,10 +37,12 @@ select {
   width: 150%;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-
+form {
+  position: relative;
+  width
+}
 /* styles for the editor */
 
 .playable {
