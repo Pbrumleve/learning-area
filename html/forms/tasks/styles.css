@@ -28,6 +28,18 @@ p {
   margin: 0.5em 0;
 }
 
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  width: 150%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 /* styles for the editor */
 
 .playable {
